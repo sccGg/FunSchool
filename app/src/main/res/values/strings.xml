@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Match</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_info">还没账号？点击立即</string>
+</resources>
