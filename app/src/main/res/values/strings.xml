@@ -4,4 +4,43 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register_info">还没账号？点击立即</string>
+
+    <!--user-info-->
+    <string name="head_portrait">头像</string>
+    <string name="info">我的</string>
+    <string name="name">法海</string>
+    <string name="fans">粉丝:100</string>
+    <string name="follow">关注:4</string>
+    <string name="study_plan">学习计划</string>
+    <string name="line">分割线</string>
+    <string name="clock">学习打卡</string>
+    <string name="Schedule">我的课程</string>
+    <string name="dynamic">我的动态</string>
+    <string name="discuss">我的讨论</string>
+    <string name="data">我的踪迹</string>
+    <string name="information">我的信息</string>
+    <string name="more">敬请期待更多...</string>
+
+    <!--class-table-->
+    <string name="time">时间</string>
+    <string name="afternoon_3">3</string>
+    <string name="morning">上\n午</string>
+    <string name="afternoon">下\n午</string>
+    <string name="Mycourse">我的课程</string>
+    <string name="night">晚上</string>
+    <string name="no">序号</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="Monday">周一</string>
+    <string name="周二">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+    <string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="sunday">周日</string>
+
+
 </resources>
