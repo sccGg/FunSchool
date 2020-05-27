@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/index_bottom_navigation"
+        android:icon="@drawable/index"
+        android:title="主页" />
+    <item
+        android:id="@+id/bst_bottom_navigation"
+        android:icon="@drawable/bst"
+        android:title="广场" />
+    <item
+        android:id="@+id/person_bottom_navigation"
+        android:icon="@drawable/person"
+        android:title="个人" />
+</menu>

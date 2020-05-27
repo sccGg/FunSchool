@@ -114,7 +114,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5">
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/item_username"
             android:layout_width="249dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
@@ -141,8 +141,8 @@
             android:layout_marginEnd="6dp"
             android:layout_marginRight="6dp"
             android:layout_marginBottom="0dp"
-            android:layout_toStartOf="@+id/username"
-            android:layout_toLeftOf="@+id/username"
+            android:layout_toStartOf="@+id/item_username"
+            android:layout_toLeftOf="@+id/item_username"
             android:src="@mipmap/person" />
     </RelativeLayout>
 
