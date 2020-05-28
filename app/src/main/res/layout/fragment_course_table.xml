@@ -14,756 +14,322 @@
         android:background="#E1ECF7">
 
         <TextView
-            android:text="我的课程"
-            android:textStyle="italic"
-            android:background="#9AC0E6"
-            android:textSize="32sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#9AC0E6"
+            android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:layout_marginBottom="1dp"/>
+            android:text="我的课程"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="时间"
-                    android:textSize="22sp"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
+                    android:textSize="22sp" />
+
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="171dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
                     android:text="上\n午"
-                    android:gravity="center"
-                    android:textSize="22sp"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="165dp" />
+                    android:textSize="22sp" />
+
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="161dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
                     android:text="下\n午"
-                    android:gravity="center"
-                    android:textSize="22sp"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="132dp" />
+                    android:textSize="22sp" />
+
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
                     android:text="晚\n上"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp" />
+                    android:textSize="22sp" />
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="序号"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
+                    android:textSize="22sp" />
+
                 <TextView
-                    android:text="1"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="2"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
+                    android:layout_height="42dp"
                     android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="3"
-                    android:gravity="center"
-                    android:background="#fff"
                     android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="4"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="5"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="1"
                     android:background="#fff"
                     android:gravity="center"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:text="1" />
+
                 <TextView
-                    android:text="2"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="2" />
+
                 <TextView
-                    android:text="3"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="3" />
+
                 <TextView
-                    android:text="4"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="4" />
+
                 <TextView
-                    android:text="1"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="5" />
+
                 <TextView
-                    android:text="2"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="6" />
+
                 <TextView
-                    android:text="3"
-                    android:gravity="center"
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:layout_height="32dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="9" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="10" />
+
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/Monday"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="周一"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
+                    android:textSize="22sp" />
                 <TextView
-                    android:text="操作系统"
+                    android:text="算法分析与设计"
                     android:background="#F2DCDB"
                     android:layout_marginBottom="1dp"
                     android:layout_marginRight="1dp"
                     android:layout_width="match_parent"
-                    android:layout_height="98dp" />
-                <TextView
-                    android:text="数据库"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text="JAVA"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:layout_height="86dp" />
+
+
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/Tuesday"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="周二"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="高数"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <!--第三节没课！-->
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="大学英语"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text="概率论"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="98dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:textSize="22sp" />
+
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/Wednesday"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="周三"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="形式与政策"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text="大学英语"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="数据结构"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:textSize="22sp" />
+
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/Thursday"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="周四"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="Android Studio"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text="近代中国史"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:textSize="22sp" />
+
 
             </LinearLayout>
+
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/Friday"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="周五"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="军事理论"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text="离散数学"
-                    android:background="#F2DCDB"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                v
+                    android:textSize="22sp" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/Saturday"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#fff"
                     android:text="周六"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" /><TextView
-                android:text=" "
-                android:background="#fff"
-                android:layout_marginBottom="1dp"
-                android:layout_marginRight="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:textSize="22sp" />
+
+
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/Sunday"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:text="周日"
-                    android:background="#fff"
-                    android:textSize="22sp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
                     android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
                     android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" /><TextView
-                android:text=" "
-                android:background="#fff"
-                android:layout_marginBottom="1dp"
-                android:layout_marginRight="1dp"
-                android:layout_width="match_parent"
-                android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
-                <TextView
-                    android:text=" "
-                    android:background="#fff"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginRight="1dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp" />
+                    android:text="周日"
+                    android:textSize="22sp" />
+
+
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            style="@style/btn_nomal_style"
             android:id="@+id/button3"
+            style="@style/btn_nomal_style"
             android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="添加课程"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:text="添加课程" />
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/btn_nomal_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="清空课程"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

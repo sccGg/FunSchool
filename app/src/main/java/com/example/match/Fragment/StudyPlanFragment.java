@@ -13,10 +13,9 @@ import com.example.match.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CourseTableFragment extends Fragment {
+public class StudyPlanFragment extends Fragment {
 
-
-    public CourseTableFragment() {
+    public StudyPlanFragment() {
         // Required empty public constructor
     }
 
@@ -24,10 +23,7 @@ public class CourseTableFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        final View view = inflater.inflate(R.layout.fragment_course_table,container,false);
-
-
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_study_plan, container, false);
     }
 }
