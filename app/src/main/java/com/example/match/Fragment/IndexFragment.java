@@ -10,16 +10,20 @@ import android.view.ViewGroup;
 
 import com.example.match.R;
 
-public class AddClassFragment extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class IndexFragment extends Fragment {
 
-    public AddClassFragment() {
+    public IndexFragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add_class, container, false);
+        return inflater.inflate(R.layout.fragment_index, container, false);
     }
 }

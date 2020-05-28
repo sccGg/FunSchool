@@ -179,7 +179,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3">
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/item_username"
             android:layout_width="275dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
@@ -204,8 +204,8 @@
             android:layout_marginEnd="@dimen/p_info"
             android:layout_marginRight="@dimen/p_info"
             android:layout_marginBottom="@dimen/p_info"
-            android:layout_toStartOf="@+id/username"
-            android:layout_toLeftOf="@+id/username"
+            android:layout_toStartOf="@+id/item_username"
+            android:layout_toLeftOf="@+id/item_username"
             android:src="@mipmap/person" />
 
     </RelativeLayout>

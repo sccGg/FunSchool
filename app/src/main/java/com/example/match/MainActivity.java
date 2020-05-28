@@ -6,6 +6,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 
+import com.example.match.Entity.Article;
+import com.example.match.Entity.User;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

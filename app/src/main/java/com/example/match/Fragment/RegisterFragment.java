@@ -43,7 +43,7 @@ public class RegisterFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_register, container, false);
         userDao= AppDataBase.instance.userDao();
-        account = view.findViewById(R.id.username);
+        account = view.findViewById(R.id.item_username);
         password = view.findViewById(R.id.password);
         name = view.findViewById(R.id.name);
         email = view.findViewById(R.id.email);
