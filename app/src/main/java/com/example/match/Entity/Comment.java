@@ -19,9 +19,29 @@ public class Comment {
     private String content;//评论内容
     @ColumnInfo
     private int up_id;//评论用户ID(实现评论，回复)
+    @ColumnInfo
+    private boolean is_level_one;//是否是一级回复
+    @ColumnInfo
+    private int reply_id;//回复评论的ID
+
+    public int getReply_id() {
+        return reply_id;
+    }
+
+    public void setReply_id(int reply_id) {
+        this.reply_id = reply_id;
+    }
 
     public int getComment_id() {
         return comment_id;
+    }
+
+    public boolean getIs_level_one() {
+        return is_level_one;
+    }
+
+    public void setIs_level_one(boolean is_level_one) {
+        this.is_level_one = is_level_one;
     }
 
     public void setComment_id(int comment_id) {

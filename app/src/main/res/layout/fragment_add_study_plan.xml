@@ -73,17 +73,18 @@
             app:layout_constraintVertical_bias="1.0">
 
             <EditText
-                android:id="@+id/add_studyplan1"
+                android:id="@+id/input_plan"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="11dp"
                 android:layout_marginEnd="-3dp"
                 android:layout_marginRight="-3dp"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="5dp"
+                android:background="?attr/editTextBackground"
                 android:ems="10" />
 
             <TextView
@@ -96,11 +97,11 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="30dp"
-                android:layout_toStartOf="@+id/add_studyplan1"
+                android:layout_toStartOf="@+id/input_plan"
                 android:gravity="center"
                 android:text="计划内容"
                 android:textSize="18sp"
-                android:layout_toLeftOf="@+id/add_studyplan1" />
+                android:layout_toLeftOf="@+id/input_plan" />
 
         </RelativeLayout>
 
@@ -159,7 +160,7 @@
             app:layout_constraintGuide_percent="0.5" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/back_plan"
             style="@style/btn_nomal_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -174,7 +175,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/summbit_plan"
             style="@style/btn_nomal_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -189,44 +190,48 @@
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
         <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_width="330dp"
+            android:layout_height="95dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toTopOf="@+id/guideline7"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="0.373">
 
-            <EditText
-                android:id="@+id/add_studyplan2"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/choose_day"
+                android:layout_width="240dp"
+                android:layout_height="52dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="-3dp"
-                android:layout_marginRight="-3dp"
-                android:layout_marginBottom="5dp"
-                android:ems="10" />
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="23dp"
+                android:layout_toLeftOf="@id/textView4"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:text="周一" />
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="77dp"
+                android:layout_height="43dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="30dp"
-                android:layout_toStartOf="@+id/add_studyplan2"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="19dp"
+                android:layout_toStartOf="@+id/input_day"
+                android:layout_toLeftOf="@+id/input_day"
                 android:gravity="center"
-                android:text="周几"
-                android:textSize="18sp"
-                android:layout_toLeftOf="@+id/add_studyplan2" />
+                android:text="时间"
+                android:textSize="18sp" />
 
         </RelativeLayout>
 

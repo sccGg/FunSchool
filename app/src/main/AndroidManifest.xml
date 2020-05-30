@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        <activity-->
-<!--            android:name=".ui.login.LoginActivity"-->
-<!--            android:label="@string/title_activity_login"></activity>-->
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.ArticleEditActivity"/>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Activity.ArticleDisplayActivity"/>
+        <activity android:name=".Activity.CourseTableActivity"/>
+        <activity android:name=".Activity.StudyPlanActivity"/>
+        <activity android:name=".Activity.AddClassActitcity"/>
+        <activity android:name=".Activity.AddStudyPlanActivity"/>
+        <activity android:name=".Activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

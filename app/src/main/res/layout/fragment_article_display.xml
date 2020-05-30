@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.ArticleDisplayFragment">
 
+    <Button
+        android:id="@+id/comment_button"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/register_button"
+        android:text="评 论"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
@@ -17,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/back_bst"
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -25,7 +39,7 @@
             android:src="?attr/homeAsUpIndicator" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/five_plan"
             android:layout_width="17dp"
             android:layout_height="37dp"
             android:layout_marginLeft="120dp"
@@ -46,21 +60,25 @@
         app:layout_constraintGuide_percent="0.08344733" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="624dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -81,7 +99,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/display_username"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="周杰伦"
@@ -100,11 +118,12 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/display_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="1"
                     android:text="爱神的箭色卡号登机口撒谎丢我给iu发噶随队撒各地"
                     android:textColor="@color/mr_cast_meta_black_scrim"
@@ -112,6 +131,21 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/mr_cast_progressbar_background_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="评论"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <com.example.match.Compent.RListView
                 android:id="@+id/comment_list"

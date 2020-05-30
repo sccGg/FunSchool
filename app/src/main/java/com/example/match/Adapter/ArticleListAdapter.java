@@ -17,6 +17,7 @@ import androidx.core.content.ContextCompat;
 import com.example.match.AppDataBase;
 import com.example.match.Compent.CircleDrawable;
 import com.example.match.Entity.Article;
+import com.example.match.Entity.User;
 import com.example.match.MainActivity;
 import com.example.match.R;
 
@@ -43,7 +44,7 @@ public class ArticleListAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return position;
+        return article_data.get(position).getArticle_id();
     }
 
     @Override
@@ -54,11 +55,14 @@ public class ArticleListAdapter extends BaseAdapter {
             articleHolder=new ArticleHolder();
             articleHolder.username=convertView.findViewById(R.id.item_username);
             articleHolder.content=convertView.findViewById(R.id.item_content);
+            articleHolder.time=convertView.findViewById(R.id.article_time);
             convertView.setTag(articleHolder);
         }else{
             articleHolder= (ArticleHolder) convertView.getTag();
         }
-        articleHolder.username.setText("周杰伦"+String.valueOf(article_data.get(position).getUser_id()));
+        User user = AppDataBase.instance.userDao().getUserById(article_data.get(position).getUser_id());
+        articleHolder.username.setText(user.getName());
+        articleHolder.time.setText(article_data.get(position).getTime());
         articleHolder.content.setText(article_data.get(position).getContent());
         return convertView;
     }
@@ -66,4 +70,5 @@ public class ArticleListAdapter extends BaseAdapter {
     class ArticleHolder{
      TextView username;
      TextView content;
+     TextView time;
 }

@@ -8,6 +8,18 @@
     tools:context=".Fragment.ArticleListFragment">
 
 
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/bottom_navigation" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
@@ -53,7 +65,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/back_index"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -61,7 +73,6 @@
                 android:src="?attr/homeAsUpIndicator" />
 
             <TextView
-                android:id="@+id/textView7"
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="120dp"
@@ -73,7 +84,7 @@
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/add_article"
                 android:layout_width="5dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

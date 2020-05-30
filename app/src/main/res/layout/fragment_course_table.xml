@@ -312,7 +312,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/addStudyButton"
             style="@style/btn_nomal_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -322,7 +322,7 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/back_plan"
             style="@style/btn_nomal_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

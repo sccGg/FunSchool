@@ -1,6 +1,7 @@
 package com.example.match.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -15,9 +16,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.match.Activity.LoginActivity;
 import com.example.match.AppDataBase;
 import com.example.match.Dao.UserDao;
 import com.example.match.Entity.User;
+import com.example.match.MainActivity;
 import com.example.match.R;
 
 /**
@@ -71,6 +74,7 @@ public class LoginFragment extends Fragment {
     public void CheckAutoLogin(){
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("user", Context.MODE_PRIVATE);
         if(sharedPreferences.contains("username")&&sharedPreferences.getBoolean("auto",false)){
+
             check(sharedPreferences.getString("username",""),sharedPreferences.getString("password",""));
         }
 
@@ -94,13 +98,14 @@ public class LoginFragment extends Fragment {
             Toast.makeText(getActivity().getApplicationContext(), "密码错误", Toast.LENGTH_LONG).show();
             return false;
         }
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("user", Context.MODE_PRIVATE);
-        sharedPreferences.edit().putString("username",username);
-        sharedPreferences.edit().putString("password",password);
-        sharedPreferences.edit().putBoolean("auto",true);
-        sharedPreferences.edit().apply();
-        NavController controller= Navigation.findNavController(view);
-        controller.navigate(R.id.action_loginFragment_to_registerFragment);
+        SharedPreferences sharedPreferences = getActivity().getApplicationContext().getSharedPreferences("user", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("username",username);
+        editor.putString("password",password);
+        editor.putBoolean("auto",true);
+        editor.commit();
+        Intent intent = new Intent(getActivity(), MainActivity.class);
+        startActivity(intent);
         return true;
     }
 }

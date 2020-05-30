@@ -29,23 +29,23 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/three_plan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:text="@string/fans"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintBottom_toBottomOf="@+id/two_plan"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.006"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/two_plan"
             app:layout_constraintVertical_bias="0.0"
             android:layout_marginLeft="32dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/two_plan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
@@ -179,7 +179,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/back_plan"
         style="@style/btn_nomal_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -199,7 +199,7 @@
         android:drawableLeft="@drawable/clock" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/summbit_plan"
         style="@style/btn_nomal_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -217,7 +217,7 @@
         android:drawableLeft="@drawable/study_plan" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/addStudyButton"
         style="@style/btn_nomal_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -262,17 +262,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.75" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:background="#D3D3D3"
-        android:contentDescription="@string/line"
-        app:layout_constraintBottom_toTopOf="@+id/guideline9"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"
