@@ -20,16 +20,16 @@ public class User {
     private String name;
     @ColumnInfo
     private String email;
-//    @ColumnInfo
-//    private Blob head;
-//
-//    public Blob getHead() {
-//        return head;
-//    }
-//
-//    public void setHead(Blob head) {
-//        this.head = head;
-//    }
+    @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
+    private byte[] head;
+
+    public byte[] getHead() {
+        return head;
+    }
+
+    public void setHead(byte[] head) {
+        this.head = head;
+    }
 
     public int getUser_id() {
         return user_id;

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ import com.example.match.Entity.User;
 import com.example.match.Fragment.ReplayListDialog;
 import com.example.match.MainActivity;
 import com.example.match.R;
+import com.example.match.Tool.ImageTool;
 
 import java.util.ArrayList;
 
@@ -56,6 +58,7 @@ public class CommentListAdapter extends BaseAdapter {
             commentHolder = new CommentHolder();
             commentHolder.comment_username=convertView.findViewById(R.id.comment_username);
             commentHolder.comment_cmt=convertView.findViewById(R.id.comment_cmt);
+            commentHolder.head_image=convertView.findViewById(R.id.comment_head);
             commentHolder.look_reply_button=convertView.findViewById(R.id.look_reply_button);
             convertView.setTag(commentHolder);
         }else{
@@ -64,6 +67,7 @@ public class CommentListAdapter extends BaseAdapter {
         User user = AppDataBase.instance.userDao().getUserById(comments.get(position).getUser_id());
         commentHolder.comment_username.setText(user.getName());
         commentHolder.comment_cmt.setText(comments.get(position).getContent());
+        commentHolder.head_image.setImageBitmap(ImageTool.ByteToBimMap(user.getHead()));
         if(!is_level_one){
             commentHolder.look_reply_button.setVisibility(View.GONE);
         }else {
@@ -92,4 +96,5 @@ public class CommentListAdapter extends BaseAdapter {
     TextView comment_time;
     TextView comment_cmt;
     Button look_reply_button;
+    ImageView head_image;
     }

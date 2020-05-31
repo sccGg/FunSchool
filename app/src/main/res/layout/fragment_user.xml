@@ -106,7 +106,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.example.match.Compent.CircleImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/change_head"
             android:layout_width="200dp"
             android:layout_height="120dp"
             android:src="@drawable/header"

@@ -26,4 +26,8 @@ public interface UserDao {
     //通过ID获取用户
     @Query("SELECT * FROM user WhERE user_id=:id")
     User getUserById(int id);
+
+    //更新头像
+    @Query("UPDATE user SET head =:head WHERE user_id=:user_id")
+    void changeHead(int user_id,byte[] head);
 }

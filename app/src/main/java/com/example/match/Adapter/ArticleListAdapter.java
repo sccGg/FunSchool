@@ -10,6 +10,7 @@ import android.text.style.ImageSpan;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
@@ -20,6 +21,7 @@ import com.example.match.Entity.Article;
 import com.example.match.Entity.User;
 import com.example.match.MainActivity;
 import com.example.match.R;
+import com.example.match.Tool.ImageTool;
 
 import java.util.List;
 import java.util.zip.Inflater;
@@ -56,6 +58,7 @@ public class ArticleListAdapter extends BaseAdapter {
             articleHolder.username=convertView.findViewById(R.id.item_username);
             articleHolder.content=convertView.findViewById(R.id.item_content);
             articleHolder.time=convertView.findViewById(R.id.article_time);
+            articleHolder.imageView=convertView.findViewById(R.id.head_image);
             convertView.setTag(articleHolder);
         }else{
             articleHolder= (ArticleHolder) convertView.getTag();
@@ -64,6 +67,7 @@ public class ArticleListAdapter extends BaseAdapter {
         articleHolder.username.setText(user.getName());
         articleHolder.time.setText(article_data.get(position).getTime());
         articleHolder.content.setText(article_data.get(position).getContent());
+        articleHolder.imageView.setImageBitmap(ImageTool.ByteToBimMap(user.getHead()));
         return convertView;
     }
 }
@@ -71,4 +75,5 @@ public class ArticleListAdapter extends BaseAdapter {
      TextView username;
      TextView content;
      TextView time;
+     ImageView imageView;
 }

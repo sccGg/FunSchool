@@ -1,5 +1,8 @@
 package com.example.match.Fragment;
 
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,6 +18,7 @@ import com.example.match.AppDataBase;
 import com.example.match.Dao.UserDao;
 import com.example.match.Entity.User;
 import com.example.match.R;
+import com.example.match.Tool.ImageTool;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -57,6 +61,8 @@ public class RegisterFragment extends Fragment {
                     user.setName(name.getText().toString());
                     user.setEmail(email.getText().toString());
                     user.setPassword(password.getText().toString());
+                    Bitmap bitmap = BitmapFactory.decodeResource(Resources.getSystem(),R.drawable.header);
+                    user.setHead(ImageTool.ImageToByte(bitmap));
                     userDao.addUser(user);
                     Toast.makeText(getActivity().getApplicationContext(),"注册成功",Toast.LENGTH_LONG).show();
                 }

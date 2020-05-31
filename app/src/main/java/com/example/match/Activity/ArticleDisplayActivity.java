@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,7 @@ import com.example.match.Entity.Comment;
 import com.example.match.Entity.User;
 import com.example.match.Fragment.ReplayListDialog;
 import com.example.match.R;
+import com.example.match.Tool.ImageTool;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -56,9 +58,11 @@ public class ArticleDisplayActivity extends AppCompatActivity {
         listView = findViewById(R.id.comment_list);
         TextView username=findViewById(R.id.display_username);
         TextView content = findViewById(R.id.display_content);
+        ImageView head_image=findViewById(R.id.head_image);
         User author = AppDataBase.instance.userDao().getUserById(article.getUser_id());
         username.setText(author.getName());
         content.setText(article.getContent());
+        head_image.setImageBitmap(ImageTool.ByteToBimMap(author.getHead()));
         look_user=AppDataBase.instance.userDao().getUserByAccount(getSharedPreferences("user",MODE_PRIVATE).getString("username",""));
          loadComment();
         RegisterLinstener();
