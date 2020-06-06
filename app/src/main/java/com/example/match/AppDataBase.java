@@ -8,17 +8,19 @@ import androidx.room.RoomDatabase;
 
 import com.example.match.Dao.ArticleDao;
 import com.example.match.Dao.CommentDao;
+import com.example.match.Dao.CourseDao;
 import com.example.match.Dao.StudyPlanDao;
 import com.example.match.Dao.UserDao;
 import com.example.match.Dao.UserInfoDao;
 import com.example.match.Entity.Article;
 import com.example.match.Entity.Comment;
+import com.example.match.Entity.Course;
 import com.example.match.Entity.StudyPlan;
 import com.example.match.Entity.User;
 import com.example.match.Entity.UserInfo;
 
 
-@Database(entities = {User.class,Article.class, Comment.class, StudyPlan.class, UserInfo.class},version = 4)
+@Database(entities = {User.class,Article.class, Comment.class, StudyPlan.class, UserInfo.class, Course.class},version = 4)
 public abstract class AppDataBase extends RoomDatabase {
     public static AppDataBase instance;
     public static AppDataBase getInstance(Context context){
@@ -32,4 +34,5 @@ public abstract class AppDataBase extends RoomDatabase {
     public abstract CommentDao commentDao();
     public abstract StudyPlanDao studyPlanDao();
     public abstract UserInfoDao userInfoDao();
+    public abstract CourseDao courseDao();
 }
