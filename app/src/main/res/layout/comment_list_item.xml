@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,8 +48,17 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="5dp"
-        android:text="哇复活四降低哦阿文的视角发"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/look_reply_button"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:gravity="left"
+        android:text="查看回复" />
 
 </LinearLayout>

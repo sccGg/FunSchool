@@ -5,6 +5,8 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.sql.Blob;
+
 @Entity
 public class User {
     @NonNull
@@ -18,6 +20,16 @@ public class User {
     private String name;
     @ColumnInfo
     private String email;
+//    @ColumnInfo
+//    private Blob head;
+//
+//    public Blob getHead() {
+//        return head;
+//    }
+//
+//    public void setHead(Blob head) {
+//        this.head = head;
+//    }
 
     public int getUser_id() {
         return user_id;

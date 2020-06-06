@@ -22,4 +22,8 @@ public interface UserDao {
     //通过账户获取用户信息
     @Query("SELECT * FROM user WHERE account=:ac")
     User getUserByAccount(String ac);
+
+    //通过ID获取用户
+    @Query("SELECT * FROM user WhERE user_id=:id")
+    User getUserById(int id);
 }
