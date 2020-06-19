@@ -65,7 +65,7 @@ public class InputDialog extends DialogFragment {
         lp.dimAmount = 0.5f;
         lp.width = WindowManager.LayoutParams.MATCH_PARENT; // 宽度持平
         window.getDecorView().setPadding(0,0,0,0);
-        window.getDecorView().setBackgroundColor(Color.BLUE);
+        window.getDecorView().setBackgroundColor(Color.WHITE);
         window.setAttributes(lp);
         window.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
         inputDlg = contentview.findViewById(R.id.dialog_comment_content);

@@ -102,7 +102,7 @@ public class LoginFragment extends Fragment {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("username",username);
         editor.putString("password",password);
-        editor.putBoolean("auto",false);
+        editor.putBoolean("auto",true);
         editor.commit();
         Intent intent = new Intent(getActivity(), MainActivity.class);
         startActivity(intent);

@@ -8,7 +8,9 @@ import androidx.room.PrimaryKey;
 @Entity
 public class StudyPlan {
     @NonNull
-    @PrimaryKey()
+    @PrimaryKey(autoGenerate = true)
+    private int plan_id;
+    @ColumnInfo
     private int user_id;
     @ColumnInfo
     private String one_plan;

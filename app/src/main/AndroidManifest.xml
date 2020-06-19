@@ -16,6 +16,8 @@
         <activity android:name=".Activity.StudyPlanActivity"/>
         <activity android:name=".Activity.AddClassActitcity"/>
         <activity android:name=".Activity.AddStudyPlanActivity"/>
+        <activity android:name=".Activity.UserInfoActivity"/>
+        <activity android:name=".Activity.UserInfoEditActivity"/>
         <activity android:name=".Activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

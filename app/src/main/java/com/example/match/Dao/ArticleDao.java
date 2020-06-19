@@ -17,6 +17,6 @@ public interface ArticleDao {
     @Query("SELECT * FROM article WHERE article_id=:id")
     Article getArticleById(int id);
 
-    @Query("SELECT * FROM article")
+    @Query("SELECT * FROM article  ORDER BY article_id desc")
     List<Article> getAllArticle();
 }

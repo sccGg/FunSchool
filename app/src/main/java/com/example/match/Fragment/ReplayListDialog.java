@@ -49,7 +49,7 @@ public class ReplayListDialog extends DialogFragment {
         lp.width = WindowManager.LayoutParams.MATCH_PARENT; // 宽度持平
         lp.height= 2300;
         window.getDecorView().setPadding(0,0,0,0);
-        window.getDecorView().setBackgroundColor(Color.BLUE);
+        window.getDecorView().setBackgroundColor(Color.WHITE);
         window.setAttributes(lp);
         RegisterListener();
         loadReply();

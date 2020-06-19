@@ -8,8 +8,10 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Course {
 
+    @PrimaryKey()
     @NonNull
-    @PrimaryKey(autoGenerate = true)
+    private int course_id;
+    @ColumnInfo
     private int user_id;
 
     @ColumnInfo
@@ -33,6 +35,14 @@ public class Course {
 
     public void setUser_id(int user_id) {
         this.user_id = user_id;
+    }
+
+    public int getCourse_id() {
+        return course_id;
+    }
+
+    public void setCourse_id(int course_id) {
+        this.course_id = course_id;
     }
 
     public String getClassName() {

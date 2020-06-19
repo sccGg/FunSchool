@@ -1,4 +1,4 @@
-package com.example.match.Fragment;
+package com.example.match.Activity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,10 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.match.AppDataBase;
 import com.example.match.Dao.UserInfoDao;
+import com.example.match.Entity.User;
 import com.example.match.Entity.UserInfo;
 import com.example.match.R;
 
@@ -24,7 +27,7 @@ import java.util.regex.Pattern;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class UserInfoEditFragment extends Fragment {
+public class UserInfoEditActivity extends AppCompatActivity {
 
     private EditText updateName;
     private EditText updateSex;
@@ -34,65 +37,72 @@ public class UserInfoEditFragment extends Fragment {
 
     private Button button;
     private UserInfoDao userInfoDao;
-
-
-
-    public UserInfoEditFragment() {
-        // Required empty public constructor
-    }
-
+    User user;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_user_info_edit, container, false);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_user_info_edit);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().hide();
+        }
+        updateName = findViewById(R.id.edit1);
+        updateSex = findViewById(R.id.edit2);
+        updateAge = findViewById(R.id.edit3);
+        updateBirth = findViewById(R.id.edit4);
+        updateAdd = findViewById(R.id.edit5);
 
-        updateName = view.findViewById(R.id.edit1);
-        updateSex = view.findViewById(R.id.edit2);
-        updateAge = view.findViewById(R.id.edit3);
-        updateBirth = view.findViewById(R.id.edit4);
-        updateAdd = view.findViewById(R.id.edit5);
-
-        button = view.findViewById(R.id.button);
+        button = findViewById(R.id.button);
         userInfoDao = AppDataBase.instance.userInfoDao();
+        user=AppDataBase.instance.userDao().getUserByAccount(getSharedPreferences("user",MODE_PRIVATE).getString("username",""));
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(check()){
-                    UserInfo userInfo = new UserInfo();
+                    UserInfo userInfo = AppDataBase.instance.userInfoDao().getUserInfo(user.getUser_id());
                     userInfo.setUserName(updateName.getText().toString());
                     userInfo.setSex(updateSex.getText().toString());
                     userInfo.setAge(updateAge.getText().toString());
-                    userInfo.setBirthday(updateAge.getText().toString());
+                    userInfo.setBirthday(updateBirth.getText().toString());
                     userInfo.setAdd(updateAdd.getText().toString());
                     userInfoDao.updateUserInfo(userInfo);
+                    user.setName(updateName.getText().toString());
+                    AppDataBase.instance.userDao().UpdateUser(user);
+                    Toast.makeText(getApplicationContext(),"修改成功",Toast.LENGTH_SHORT).show();
+                    finish();
                 }
             }
         });
-
-        // Inflate the layout for this fragment
-        return view;
+         load();
     }
-
+    public void load(){
+        user = AppDataBase.instance.userDao().getUserByAccount(getSharedPreferences("user",MODE_PRIVATE).getString("username",""));
+        UserInfo userinfo =AppDataBase.instance.userInfoDao().getUserInfo(user.getUser_id());
+        updateName.setText(userinfo.getUserName());
+        updateSex.setText(userinfo.getSex());
+        updateAge.setText(userinfo.getAge());
+        updateBirth.setText(userinfo.getBirthday());
+        updateAdd.setText(userinfo.getAdd());
+    }
     public boolean check(){
         if (CheckChar(updateAdd.getText().toString())){
-            Toast.makeText(getActivity().getApplicationContext(),"地址包含非法字符",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"地址包含非法字符",Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (checkSex(updateSex.getText().toString())){
-            Toast.makeText(getActivity().getApplicationContext(),"性别不合法，请输入男或女",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"性别不合法，请输入男或女",Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (!checkDate(updateBirth.getText().toString())){
-            Toast.makeText(getActivity().getApplicationContext(),"日期不合法",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"日期不合法",Toast.LENGTH_LONG).show();
             return false;
         }
 
         if (Integer.parseInt(updateAge.getText().toString())<0||Integer.parseInt(updateAge.getText().toString())>100){
-            Toast.makeText(getActivity().getApplicationContext(),"年龄不合法",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"年龄不合法",Toast.LENGTH_LONG).show();
             return false;
         }
 

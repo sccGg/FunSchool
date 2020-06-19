@@ -1,5 +1,6 @@
 package com.example.match.Activity;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -45,10 +46,10 @@ public class AddClassActitcity extends AppCompatActivity {
         weekDay = findViewById(R.id.add_class5);
 
         backButton = findViewById(R.id.button4);
-        sureButton = findViewById(R.id.summbit_plan);
+        sureButton = findViewById(R.id.SureButton);
 
         courseDao = AppDataBase.instance.courseDao();
-        user = AppDataBase.instance.userDao().getUserByAccount(DataTool.getUserName(this));
+        user = AppDataBase.instance.userDao().getUserByAccount(getSharedPreferences("user", Context.MODE_PRIVATE).getString("username",""));
         sureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

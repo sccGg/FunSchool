@@ -16,6 +16,7 @@ import com.example.match.AppDataBase;
 import com.example.match.Entity.Article;
 import com.example.match.Entity.User;
 import com.example.match.R;
+import com.example.match.Tool.ImageTool;
 
 import java.util.List;
 
@@ -42,7 +43,7 @@ public class RecommandListAdapter extends RecyclerView.Adapter<RecommandHolder> 
         holder.title.setText(articleList.get(position).getTitle());
         User user = AppDataBase.instance.userDao().getUserById(articleList.get(position).getUser_id());
         holder.author.setText(user.getName());
-        holder.banner.setImageResource(R.drawable.header);
+        holder.banner.setImageBitmap(ImageTool.ByteToBimMap(user.getHead()));
     }
 
     @Override

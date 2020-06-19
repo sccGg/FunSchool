@@ -140,4 +140,5 @@ public class ArticleDisplayActivity extends AppCompatActivity {
         });
         return inputDialog;
     }
+
 }

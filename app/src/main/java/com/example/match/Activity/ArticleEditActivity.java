@@ -77,7 +77,7 @@ public class ArticleEditActivity extends AppCompatActivity {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         article.setTime(df.format(day));
         AppDataBase.instance.articleDao().addArticle(article);
-        Toast.makeText(getApplicationContext(),user.getName(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"发表成功",Toast.LENGTH_SHORT).show();
         this.finish();
         return true;
     }

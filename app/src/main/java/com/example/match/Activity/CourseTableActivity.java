@@ -45,7 +45,8 @@ public class CourseTableActivity extends AppCompatActivity {
         if (getSupportActionBar() != null){
             getSupportActionBar().hide();
         }
-        addButton = findViewById(R.id.addStudyButton);
+        AppDataBase.getInstance(getApplicationContext());
+        addButton = findViewById(R.id.addClassButton);
         cleanButton = findViewById(R.id.back_plan);
         courseDao = AppDataBase.instance.courseDao();
         final User user=AppDataBase.instance.userDao().getUserByAccount(DataTool.getUserName(this));

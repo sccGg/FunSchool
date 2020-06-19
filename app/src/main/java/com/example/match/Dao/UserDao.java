@@ -3,6 +3,7 @@ package com.example.match.Dao;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 
 import com.example.match.Entity.User;
@@ -18,6 +19,9 @@ public interface UserDao {
     //添加用户
     @Insert
     void addUser(User...users);
+    //更新
+    @Update
+    void UpdateUser(User user);
 
     //通过账户获取用户信息
     @Query("SELECT * FROM user WHERE account=:ac")
